@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>set_value</title>
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link href="../assets/default.css" type="text/css" rel="stylesheet" media="all" />
+		<link href="../assets/handler_page.css" type="text/css" rel="stylesheet" media="all" />
+		<link href="../assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
+		<meta name="keywords" content="set_value" />
+		<script type="text/javascript" src="../assets/run_helpscript.js"></script>
+	</head>
+
+	<body>
+		<div style="visibility:hidden"><a href="../../" id="HelpBookRoot"></a></div>
+		<div id="smartheader">
+			<table width="95%" border="0" cellspacing="2" cellpadding="0">
+				<tr>
+					<td align="left"><a href="../contents.html">XAccessor Reference </a></td>
+					<td align="right"><a onclick="return runHelpScript(this)" href="../assets/editScript.scpt">Edit Script</a></td>
+				</tr>
+			</table>
+		</div>
+<div class="elementTitle">
+<a id="set_value" name="set_value">set_value</a>
+</div>
+<p class="sourceCode">
+<span class="userDefine">set_value</span>(<span class="userDefine">an_object</span>, <span class="userDefine">a_label</span>, <span class="userDefine">a_value</span>)
+<a href="../assets/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
+<img src="../assets/Clipboard24.png" alt="copy to clipboard" align="right" />
+</a></p>
+<p>Set a value in a record or a property of a script object with specifying its label of a text.</p>
+<p>if an_object does not have a_label, a_label is added into a_object when an_object is a record. When an_object is a script object, passing nonexistent label cause an error.</p>
+<p>If new label is added into an_object, returned value is not same instance to an_object.</p>
+<div class="subHeading">
+Parameters
+</div>
+<ul>
+<li>a_label (text): name of the label</li>
+<li>a_value (anything) : a value to set</li>
+<li>an_object (record or script object) : a record or a script object to access</li>
+</ul>
+<div class="subHeading">
+Result
+</div>
+<p>record or script object : usually same to an_object</p>
+	</body>
+
+</html>
