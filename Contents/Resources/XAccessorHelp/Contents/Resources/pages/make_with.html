@@ -9,27 +9,36 @@
 		<link href="../assets/default.css" type="text/css" rel="stylesheet" media="all" />
 		<link href="../assets/handler_page.css" type="text/css" rel="stylesheet" media="all" />
 		<link href="../assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
-		<meta name="keywords" content="make_with" />
-		<script type="text/javascript" src="../assets/run_helpscript.js"></script>
+		<meta name="keywords" content="make_with, XAccessor" />
+		<script type="text/javascript" src="../assets-helpbook/run_helpscript.js"></script>
+        <link id="helpviewer-handler-helper" href="../assets-helpbook/helpviewer-handler-helper.scpt" />
+        <script type="text/javascript" src="../assets-helpbook/helpviewer-handler-enable.js"></script>
+		<link href="../" id="HelpBookRoot" />
 	</head>
 
 	<body>
-		<div style="visibility:hidden"><a href="..//" id="HelpBookRoot"></a></div>
-		<div id="smartheader">
-			<table width="95%" border="0" cellspacing="2" cellpadding="0">
-				<tr>
-					<td align="left"><a href="../index.html">XAccessor Reference </a></td>
-					<td align="right"><a onclick="return runHelpScript(this)" href="../assets/editScript.scpt">Edit Script</a></td>
-				</tr>
-			</table>
+		<div id="navi-bar">
+			<div class="edit-script-link">
+			<a onclick="return runHelpScriptWithBundleRoot(this)" href="../assets-helpbook/editScript.scpt">Edit Script</a>
+			</div>
+			<div class="left-contents">
+			<div class="to-root">
+			<a href="../index.html">XAccessor Reference </a>
+			</div>
+			</div>
 		</div>
-<div class="elementTitle">
+		<div id="contents">
+		<div class="elementTitle">
 <a id="make_with" name="make_with">make_with</a>
 </div>
-<p class="sourceCode"><span class="userDefine">make_with</span><span class="normal">(</span><span class="userDefine">a_label</span><span class="normal">)</span><a href="../assets/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
-<img src="../assets/Clipboard24.png" alt="copy to clipboard" align="right" />
+<p class="sourceCode">
+<span class="userDefine">make_with</span><span class="normal">(</span><span class="userDefine">a_label</span><span class="normal">)</span>
+<a href="../assets-helpbook/setClipboard.scpt" onclick="return runHelpScriptWithInnerText(this)">
+<img src="../assets-helpbook/Clipboard24.png" alt="copy to clipboard" align="right" />
 </a></p>
 <p>Obtain an accessor object to access a label specified with a text.</p>
+
+
 <p>An accessor object is a script object to access a specified label. The accessor object have following two handlers.</p>
 <ul>
 <li>value at an_object</li>
@@ -40,12 +49,13 @@
 Parameters
 </div>
 <ul>
-<li>a_label (text) : a text to spedify a label or a global variable.</li>
+<li>a_label (text) : a text to specify a label or a global variable.</li>
 </ul>
 <div class="subHeading">
 Result
 </div>
 <p>selector object : an accessor object to access the specified label or global variable.</p>
+		</div>
 	</body>
 
 </html>

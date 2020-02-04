@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+		<title>XAccessor Reference </title>
+		<meta name="AppleTitle" content="XAccessor Reference " />
+
+		<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+		<link href="assets/default.css" type="text/css" rel="stylesheet" media="all" />
+        <link href="assets/applescript.css" type="text/css" rel="stylesheet" media="all" />
+		<meta name="keywords" content="XAccessor, AppleScript" />
+		<script type="text/javascript" src="assets-helpbook/run_helpscript.js"></script>
+		<script type="text/javascript" src="assets/navibar-jump.js"></script>
+        <link id="helpviewer-handler-helper" href="assets-helpbook/helpviewer-handler-helper.scpt" />
+        <script type="text/javascript" src="assets-helpbook/helpviewer-handler-enable.js"></script>
+        <link href="./" id="HelpBookRoot" />
+	</head>
+
+	<body>
+		<div id="navi-bar">
+			<div class="edit-script-link">
+				<a onclick="return runHelpScriptWithBundleRoot(this)" href="assets-helpbook/editScript.scpt">Edit Script</a>
+			</div>
+			<div class="left-contents">
+			<div class="to-root">
+				<!-- InstanceBeginEditable name="to-root" --><!-- InstanceEndEditable -->
+			</div>
+			<select onchange="navibarJump(this)">
+<option value="">
+§
+</option>
+<option value="#Class_Methods">
+Class Methods
+</option>
+<option value="#value_of">
+- value_of
+</option>
+<option value="#set_value">
+- set_value
+</option>
+<option value="#global_value">
+- global_value
+</option>
+<option value="#set_global">
+- set_global
+</option>
+<option value="#Obtain_an_Accessor_Object">
+Obtain an Accessor Object
+</option>
+<option value="#make_with">
+- make_with
+</option>
+<option value="#Instance_Methods">
+Instance Methods
+</option>
+<option value="#value_of_1">
+- value_of
+</option>
+<option value="#set_value_1">
+- set_value
+</option>
+<option value="#global_value_1">
+- global_value
+</option>
+<option value="#set_global_1">
+- set_global
+</option>
+</select>
+			</div>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><!-- InstanceEndEditable -->
+		<div id="contents">
+		<h1>XAccessor Reference </h1>
+<ul>
+<li>Version : 1.2</li>
+<li>Author : Kurita Tetsuro <a href="mailto:scriptfactory@mac.com">scriptfactory@mac.com</a></li>
+<li>Requirements : OS X 10.9 or later</li>
+<li><a href="http://www.script-factory.net/XModules/XAccessor/en/index.html">Home page</a> || <a href="http://www.script-factory.net/XModules/XAccessor/changelog.html">ChangeLog</a> || <a href="https://github.com/tkurita/XAccessor.scptd">Repository</a> </li>
+</ul>
+<p>XAccessor is an AppleScript library to make it possible to :</p>
+<ul>
+<li>get/set a value from a record by specifying the label name with text.</li>
+<li>get/set a value of a property from a script object by specifying the property name with text.</li>
+<li>get/set a value of a global variable by specifying the name with text.</li>
+</ul>
+<div class="sourceCode">
+<div class="scriptButton">
+    <input type="button" value="Open this script" onclick="document.location = this.src" src="applescript://com.apple.scripteditor?action=new&amp;script=use%20XAccessor%20:%20script%20%22XAccessor%22%0D%0Dset%20a_record%20to%20%7Ba:%22aa%22%7D%0D%0Dscript%20AScript%0D%09property%20a%20:%20%22aa%22%0D%09global%20b%0D%09on%20get_b()%0D%09%09return%20b%0D%09end%20get_b%0Dend%20script%0D%0D(*%3D%3D%20Using%20Class%20Methods%20%3D%3D*)%0D(*%20access%20to%20property%20*)%0Dlog%20XAccessor%27s%20value_of(AScript,%20%22a%22)%20--%20%22aa%22%0DXAccessor%27s%20set_value(AScript,%20%22a%22,%20%22hello%22)%0D%0D(*%20access%20to%20global%20variable%20*)%0DXAccessor%27s%20set_global(%22b%22,%20%22hey%22)%0Dlog%20XAccessor%27s%20global_value(%22b%22)%20--%20%22hey%22%0D%0D%0D(*%3D%3D%20Using%20XAccessor%20Instance%20%3D%3D*)%0D(*%20access%20to%20property%20*)%0Dset%20a_accessor%20to%20XAccessor%27s%20make_with(%22a%22)%0Dlog%20a_accessor%27s%20value_of(AScript)%20--%20%22hello%22%0Dlog%20a_accessor%27s%20value_of(a_record)%20--%20%22aa%22%0D%0D(*%20access%20to%20global%20variable%20*)%0Dset%20b_accessor%20to%20XAccessor%27s%20make_with(%22b%22)%0Dlog%20b_accessor%27s%20global_value()%20--%20%22hey%22%5D" />
+</div><div>
+<span class="langKeyword">use</span> <span class="userDefine">XAccessor</span><span class="normal"> : </span><span class="className">script</span><span class="normal"> &quot;XAccessor&quot;</span>
+</div>
+<br />
+<div>
+<span class="langKeyword">set</span> <span class="userDefine">a_record</span> <span class="langKeyword">to</span><span class="normal"> {</span><span class="userDefine">a</span><span class="normal">:&quot;aa&quot;}</span>
+</div>
+<br />
+<div>
+<span class="langKeyword">script</span> <span class="userDefine">AScript</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">property</span> <span class="userDefine">a</span><span class="normal"> : &quot;aa&quot;</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">global</span> <span class="userDefine">b</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">on</span> <span class="userDefine">get_b</span><span class="normal">()</span>
+</div>
+<div style="text-indent:8ex;">
+<span class="langKeyword">return</span> <span class="userDefine">b</span>
+</div>
+<div style="text-indent:4ex;">
+<span class="langKeyword">end</span> <span class="userDefine">get_b</span>
+</div>
+<div>
+<span class="langKeyword">end</span> <span class="langKeyword">script</span>
+</div>
+<br />
+<div>
+<span class="comment">(*== Using Class Methods ==*)</span>
+</div>
+<div>
+<span class="comment">(* access to property *)</span>
+</div>
+<div>
+<span class="commandName">log</span> <span class="userDefine">XAccessor's</span> <span class="userDefine">value_of</span><span class="normal">(</span><span class="userDefine">AScript</span><span class="normal">, &quot;a&quot;) </span><span class="comment">-- &quot;aa&quot;</span>
+</div>
+<div>
+<span class="userDefine">XAccessor's</span> <span class="userDefine">set_value</span><span class="normal">(</span><span class="userDefine">AScript</span><span class="normal">, &quot;a&quot;, &quot;hello&quot;)</span>
+</div>
+<br />
+<div>
+<span class="comment">(* access to global variable *)</span>
+</div>
+<div>
+<span class="userDefine">XAccessor's</span> <span class="userDefine">set_global</span><span class="normal">(&quot;b&quot;, &quot;hey&quot;)</span>
+</div>
+<div>
+<span class="commandName">log</span> <span class="userDefine">XAccessor's</span> <span class="userDefine">global_value</span><span class="normal">(&quot;b&quot;) </span><span class="comment">-- &quot;hey&quot;</span>
+</div>
+<br /><br />
+<div>
+<span class="comment">(*== Using XAccessor Instance ==*)</span>
+</div>
+<div>
+<span class="comment">(* access to property *)</span>
+</div>
+<div>
+<span class="langKeyword">set</span> <span class="userDefine">a_accessor</span> <span class="langKeyword">to</span> <span class="userDefine">XAccessor's</span> <span class="userDefine">make_with</span><span class="normal">(&quot;a&quot;)</span>
+</div>
+<div>
+<span class="commandName">log</span> <span class="userDefine">a_accessor's</span> <span class="userDefine">value_of</span><span class="normal">(</span><span class="userDefine">AScript</span><span class="normal">) </span><span class="comment">-- &quot;hello&quot;</span>
+</div>
+<div>
+<span class="commandName">log</span> <span class="userDefine">a_accessor's</span> <span class="userDefine">value_of</span><span class="normal">(</span><span class="userDefine">a_record</span><span class="normal">) </span><span class="comment">-- &quot;aa&quot;</span>
+</div>
+<br />
+<div>
+<span class="comment">(* access to global variable *)</span>
+</div>
+<div>
+<span class="langKeyword">set</span> <span class="userDefine">b_accessor</span> <span class="langKeyword">to</span> <span class="userDefine">XAccessor's</span> <span class="userDefine">make_with</span><span class="normal">(&quot;b&quot;)</span>
+</div>
+<div>
+<span class="commandName">log</span> <span class="userDefine">b_accessor's</span> <span class="userDefine">global_value</span><span class="normal">() </span><span class="comment">-- &quot;hey&quot;]</span>
+</div>
+</div>
+<p>The mechanism of XAccessor is making script objects to access properties at runtime using &quote;run script&quote; command.</p>
+<p>Class methods always generate an accessor object each time when called. The cost of generating an accessor object is expensive. The number of generating accessor objects should be keep minimum. Therefor it should be considered that storing accessor objects returned from make_with(a_name) into variables, and reuse it.</p>
+<h2 id="Class_Methods">Class Methods</h2>
+<h3 id="value_of"><a href="pages/value_of.html">value_of</a></h3>
+<p>Obtain a value in a record or a property of a script object with specify its label of a text.</p>
+<h3 id="set_value"><a href="pages/set_value.html">set_value</a></h3>
+<p>Set a value in a record or a property of a script object with specifying its label of a text.</p>
+<h3 id="global_value"><a href="pages/global_value.html">global_value</a></h3>
+<p>Obtain a value of a global variable specified with a name.</p>
+<h3 id="set_global"><a href="pages/set_global.html">set_global</a></h3>
+<p>set a value to a global variable specified with a name.</p>
+<h2 id="Obtain_an_Accessor_Object">Obtain an Accessor Object</h2>
+<h3 id="make_with"><a href="pages/make_with.html">make_with</a></h3>
+<p>Obtain an accessor object to access a label specified with a text.</p>
+<h2 id="Instance_Methods">Instance Methods</h2>
+<h3 id="value_of_1"><a href="pages/value_of_1.html">value_of</a></h3>
+<p>get value in an_object</p>
+<h3 id="set_value_1"><a href="pages/set_value_1.html">set_value</a></h3>
+<p>set a value to the property of given object</p>
+<h3 id="global_value_1"><a href="pages/global_value_1.html">global_value</a></h3>
+<p>Get a value of a global variable</p>
+<h3 id="set_global_1"><a href="pages/set_global_1.html">set_global</a></h3>
+<p>Set a value to global variable</p>
+		</div>
+		<!-- InstanceBeginEditable name="prev-next-item" --><!-- InstanceEndEditable -->
+	</body>
+
+</html>

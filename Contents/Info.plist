@@ -7,7 +7,7 @@
 	<key>CFBundleHelpBookFolder</key>
 	<string>XAccessorHelp</string>
 	<key>CFBundleHelpBookName</key>
-	<string>net.script-factory.XAccessor.help</string>
+	<string>${ProductIdentifier}.help</string>
 	<key>CFBundleIdentifier</key>
 	<string>net.script-factory.XAccessor</string>
 	<key>CFBundleShortVersionString</key>
@@ -31,7 +31,7 @@
 		<key>positionOfDivider</key>
 		<real>492</real>
 		<key>savedFrame</key>
-		<string>225 132 749 694 0 0 1440 877 </string>
+		<string>161 183 749 694 0 0 1440 877 </string>
 		<key>selectedTab</key>
 		<string>result</string>
 	</dict>
