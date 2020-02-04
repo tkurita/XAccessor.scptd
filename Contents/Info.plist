@@ -7,24 +7,32 @@
 	<key>CFBundleHelpBookFolder</key>
 	<string>XAccessorHelp</string>
 	<key>CFBundleHelpBookName</key>
-	<string>XAccessor Help</string>
+	<string>net.script-factory.XAccessor.help</string>
 	<key>CFBundleIdentifier</key>
-	<string>Scriptfactory.XAccessor</string>
+	<string>net.script-factory.XAccessor</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.1.1</string>
+	<string>1.2</string>
 	<key>CFBundleVersion</key>
-	<string>1.1.1</string>
+	<string>1.2</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>copyright 2007-2010, Tetsuro KURITA</string>
+	<string>copyright 2007-2020, Kurita Tetsuro</string>
 	<key>WindowState</key>
 	<dict>
+		<key>bundleDividerCollapsed</key>
+		<false/>
+		<key>bundlePositionOfDivider</key>
+		<real>450</real>
+		<key>dividerCollapsed</key>
+		<false/>
+		<key>eventLogLevel</key>
+		<integer>2</integer>
 		<key>name</key>
 		<string>ScriptWindowState</string>
 		<key>positionOfDivider</key>
 		<real>492</real>
 		<key>savedFrame</key>
-		<string>51 149 749 694 0 0 1440 878 </string>
-		<key>selectedTabView</key>
+		<string>225 132 749 694 0 0 1440 877 </string>
+		<key>selectedTab</key>
 		<string>result</string>
 	</dict>
 </dict>
