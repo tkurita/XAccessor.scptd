@@ -31,6 +31,12 @@
 <option value="">
 §
 </option>
+<option value="#Example">
+Example
+</option>
+<option value="#Description">
+Description
+</option>
 <option value="#Class_Methods">
 Class Methods
 </option>
@@ -85,6 +91,7 @@ Instance Methods
 <li>get/set a value of a property from a script object by specifying the property name with text.</li>
 <li>get/set a value of a global variable by specifying the name with text.</li>
 </ul>
+<h2 id="Example">Example</h2>
 <div class="sourceCode">
 <div class="scriptButton">
     <input type="button" value="Open this script" onclick="document.location = this.src" src="applescript://com.apple.scripteditor?action=new&amp;script=use%20XAccessor%20:%20script%20%22XAccessor%22%0D%0Dset%20a_record%20to%20%7Ba:%22aa%22%7D%0D%0Dscript%20AScript%0D%09property%20a%20:%20%22aa%22%0D%09global%20b%0D%09on%20get_b()%0D%09%09return%20b%0D%09end%20get_b%0Dend%20script%0D%0D(*%3D%3D%20Using%20Class%20Methods%20%3D%3D*)%0D(*%20access%20to%20property%20*)%0Dlog%20XAccessor%27s%20value_of(AScript,%20%22a%22)%20--%20%22aa%22%0DXAccessor%27s%20set_value(AScript,%20%22a%22,%20%22hello%22)%0D%0D(*%20access%20to%20global%20variable%20*)%0DXAccessor%27s%20set_global(%22b%22,%20%22hey%22)%0Dlog%20XAccessor%27s%20global_value(%22b%22)%20--%20%22hey%22%0D%0D%0D(*%3D%3D%20Using%20XAccessor%20Instance%20%3D%3D*)%0D(*%20access%20to%20property%20*)%0Dset%20a_accessor%20to%20XAccessor%27s%20make_with(%22a%22)%0Dlog%20a_accessor%27s%20value_of(AScript)%20--%20%22hello%22%0Dlog%20a_accessor%27s%20value_of(a_record)%20--%20%22aa%22%0D%0D(*%20access%20to%20global%20variable%20*)%0Dset%20b_accessor%20to%20XAccessor%27s%20make_with(%22b%22)%0Dlog%20b_accessor%27s%20global_value()%20--%20%22hey%22%5D" />
@@ -167,6 +174,7 @@ Instance Methods
 <span class="commandName">log</span> <span class="userDefine">b_accessor's</span> <span class="userDefine">global_value</span><span class="normal">() </span><span class="comment">-- &quot;hey&quot;]</span>
 </div>
 </div>
+<h2 id="Description">Description</h2>
 <p>The mechanism of XAccessor is making script objects to access properties at runtime using &quote;run script&quote; command.</p>
 <p>Class methods always generate an accessor object each time when called. The cost of generating an accessor object is expensive. The number of generating accessor objects should be keep minimum. Therefor it should be considered that storing accessor objects returned from make_with(a_name) into variables, and reuse it.</p>
 <h2 id="Class_Methods">Class Methods</h2>
