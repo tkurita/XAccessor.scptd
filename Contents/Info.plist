@@ -11,11 +11,11 @@
 	<key>CFBundleIdentifier</key>
 	<string>net.script-factory.XAccessor</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2</string>
+	<string>1.2.1b</string>
 	<key>CFBundleVersion</key>
-	<string>1.2</string>
+	<string>5</string>
 	<key>NSHumanReadableCopyright</key>
-	<string>copyright 2007-2020, Kurita Tetsuro</string>
+	<string>Copyright 2007-2020, Kurita Tetsuro</string>
 	<key>WindowState</key>
 	<dict>
 		<key>bundleDividerCollapsed</key>
@@ -31,7 +31,7 @@
 		<key>positionOfDivider</key>
 		<real>492</real>
 		<key>savedFrame</key>
-		<string>161 183 749 694 0 0 1440 877 </string>
+		<string>407 183 749 694 0 0 1440 877 </string>
 		<key>selectedTab</key>
 		<string>result</string>
 	</dict>
