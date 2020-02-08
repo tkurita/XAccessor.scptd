@@ -7,11 +7,11 @@
 	<key>CFBundleHelpBookFolder</key>
 	<string>XAccessorHelp</string>
 	<key>CFBundleHelpBookName</key>
-	<string>${ProductIdentifier}.help</string>
+	<string>net.script-factory.XAccessor.help</string>
 	<key>CFBundleIdentifier</key>
 	<string>net.script-factory.XAccessor</string>
 	<key>CFBundleShortVersionString</key>
-	<string>1.2.1b</string>
+	<string>1.2.1</string>
 	<key>CFBundleVersion</key>
 	<string>5</string>
 	<key>NSHumanReadableCopyright</key>
@@ -19,9 +19,9 @@
 	<key>WindowState</key>
 	<dict>
 		<key>bundleDividerCollapsed</key>
-		<false/>
+		<true/>
 		<key>bundlePositionOfDivider</key>
-		<real>450</real>
+		<real>0.0</real>
 		<key>dividerCollapsed</key>
 		<false/>
 		<key>eventLogLevel</key>
@@ -31,7 +31,7 @@
 		<key>positionOfDivider</key>
 		<real>492</real>
 		<key>savedFrame</key>
-		<string>407 183 749 694 0 0 1440 877 </string>
+		<string>280 183 841 694 0 0 1440 877 </string>
 		<key>selectedTab</key>
 		<string>result</string>
 	</dict>

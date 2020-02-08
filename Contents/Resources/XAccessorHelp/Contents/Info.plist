@@ -5,11 +5,11 @@
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en_US</string>
 	<key>CFBundleIdentifier</key>
-	<string>${ProductIdentifier}.help</string>
+	<string>net.script-factory.XAccessor.help</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
 	<key>CFBundleName</key>
-	<string>${HBBundleName}</string>
+	<string>XAccessorHelp</string>
 	<key>CFBundlePackageType</key>
 	<string>BNDL</string>
 	<key>CFBundleShortVersionString</key>
@@ -23,7 +23,7 @@
 	<key>HPDBookIndexPath</key>
 	<string>search.helpindex</string>
 	<key>HPDBookKBProduct</key>
-	<string>${ProductName}</string>
+	<string>XAccessor</string>
 	<key>HPDBookTitle</key>
 	<string>XAccessor Reference </string>
 	<key>HPDBookType</key>
