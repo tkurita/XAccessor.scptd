@@ -8,10 +8,10 @@ XAccessor is an AppleScript library to make followings possible.
 
 ## Usage
 English :
-* http://www.script-factory.net/XModules/XAccessor/en/index.html
+* https://www.script-factory.net/XModules/XAccessor/en/index.html
 
 Japanese :
-* http://www.script-factory.net/XModules/XAccessor/index.html
+* https://www.script-factory.net/XModules/XAccessor/index.html
 
 ## Reqirements
 * OS X 10.9 or later.
